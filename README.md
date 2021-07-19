@@ -1,9 +1,8 @@
 # Automated tests
-Test scenarios created for Deel's selection process in the role of QA. 
-- [DEEL] https://dev.deel.wtf/
+Test scenarios created for Deel's selection process in the role of QA. [DEEL] https://dev.deel.wtf/
 
-    -Tests developed in Cypress + PageObject
-    -Reports in Mocha
+- Tests developed in Cypress + PageObject
+- Reports in Mocha
 
 ## Folder Structure
 
@@ -16,7 +15,8 @@ Fixtures: Folder with the BDD (.robot files)
      └───mocha: Post with the reports generated in json
      └───mochareports-hhml: Folder with html reports, generated from jason
 └───screenshots: Folder intended to store evidence of images
-└───support: Folder for generating reports / screenshots
+└───support: Folder for auxiliary classes and pageobjects
+    └───pageobjects Folder with pageobjects (files js)
 └───videos: Folders designed to store video evidence
 
 ```
@@ -38,7 +38,7 @@ Fixtures: Folder with the BDD (.robot files)
 
 - Run tests in mode without graphical mode, generating html report Mocha: `mpm run test`
 
-- You can find the mocha report in path:
+- You can find the **Mocha** report in path:
 
 ```
 └───Project
