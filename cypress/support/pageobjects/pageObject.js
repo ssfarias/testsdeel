@@ -5,9 +5,9 @@ Cypress.Commands.add('creatingFixedContract', (name, title) => {
     cy.xpath('//div[@class="select__value-container css-1hwfws3"][contains(.,"Select...")]').click();
     cy.xpath('//div[@id="react-select-2-option-0"]').click();
     cy.xpath('//h6[contains(.,"Saved/predefined scopes")]').click();
-    cy.xpath('//div[@class="scope-box"][contains(.,"Quality Assurance Engineer")]').click();      
+    cy.xpath('//div[@class="scope-box"][contains(.,"Quality Assurance Engineer")]').click();
     cy.xpath('//div[@name="effectiveDate"]').click();
-    cy.xpath('//abbr[contains(.,"16")]').click();
+    cy.xpath('//abbr[contains(.,"19")]').click();
     cy.xpath('//button[@class="button mb-7 w-100"][contains(.,"next")]').click();
 });
 

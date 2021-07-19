@@ -1,7 +1,8 @@
 const { describe } = require("mocha");
 import '../support/commands';
-import contract from '../support/pageobjects/pageObject'
+import '../support/pageobjects/pageObject';
 import '../support/index';
+import moment, * as moments from 'moment';
 
 describe("New Contract", () => {
     beforeEach(() => cy.visit("https://dev.deel.wtf/login"));
@@ -23,7 +24,7 @@ describe("New Contract", () => {
       
         //data        
             const name = "Contract Test001";
-            const title = "Quality Assurance Engineer";
+            const title = "Quality Assurance Engineer";   
             const rate = "1000";
             const currency = "GBP - British Pound";
             const per = "Week";
