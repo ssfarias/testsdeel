@@ -1,6 +1,6 @@
 const { describe } = require("mocha");
 import '../support/commands';
-import contract from '../support/pageobjects/pageObject'
+import contract from '../support/pageobjects/pageObjectNoScope'
 import '../support/index';
 
 describe("New Contract", () => {
@@ -22,8 +22,8 @@ describe("New Contract", () => {
         cy.xpath('//h4[contains(.,"Fixed Rate")]').click();
       
         //data        
-            const name = "Contract Test001";
-            const title = "Quality Assurance Engineer";
+            const name = "Contract Test001";   
+            const scope = "Scope of work to Quality Assurance Engineer position"        
             const rate = "1000";
             const currency = "GBP - British Pound";
             const per = "Week";
