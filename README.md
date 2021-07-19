@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Automated tests
 Test scenarios created for Deel's selection process in the role of QA. [DEEL] https://dev.deel.wtf/
     -Tests developed in Cypress using PageObject
@@ -39,3 +40,24 @@ Run tests in mode without graphical mode, generating html report Mocha: mpm run 
 
 
 
+=======
+# Tests Deel
+
+
+--------------------------------------------------------------
+
+# Run tests
+>Run tests With native graphical mode cypress
+npx cypress run
+
+>Run test With Mocha report
+mpm run test
+
+>Path to find a mocha report
+reports/mochareports-html/report.html
+-------------------------------------------------------------
+
+
+# You can learn more about cypress in:
+HomePage: https://docs.cypress.io/guides/overview/why-cypress
+>>>>>>> 62ba6ef66d5bdc12c5c0304615c5e9309354b801
