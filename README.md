@@ -36,7 +36,7 @@ Fixtures: Folder with the BDD (.robot files)
 
 - Run tests in native cypress graphics mode: `npx cypress run`
 
-- Run tests in mode without graphical mode, generating html report Mocha: `mpm run test`
+- Run tests in mode without graphical mode, generating html report Mocha: `npm run test`
 
 - You can find the **Mocha** report in path:
 

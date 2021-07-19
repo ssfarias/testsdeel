@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 2,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T19:40:40.538Z",
+    "start": "2021-07-19T19:40:56.231Z",
     "end": "2021-07-19T19:41:15.849Z",
-    "duration": 28559,
-    "testsRegistered": 2,
+    "duration": 19618,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -17,64 +17,6 @@
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "20b6186a-d0f9-484c-bee8-e26634f2208c",
-      "title": "",
-      "fullFile": "cypress/integration/1-DoLogin.spec.js",
-      "file": "cypress/integration/1-DoLogin.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "171d94bf-5f55-47d6-8b83-5f0fbc829477",
-          "title": "Do Login",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Login",
-              "fullTitle": "Do Login Login",
-              "timedOut": null,
-              "duration": 9048,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "var login = \"silvafar@gmail.com\";\nvar password = \"Simone@Helo01\";\ncy.xpath('//input[@name=\"email\"]').type(login);\ncy.xpath('//input[@name=\"password\"]').type(password);\ncy.xpath('//button[@type=\"submit\"]').click();\ncy.xpath('//button[@data-qa=\"close\"]').should('be.visible').click();\ncy.xpath('//h1[@data-qa=\"heading\"]').should('be.visible');",
-              "err": {},
-              "uuid": "ea864962-a168-46f7-b67d-dbc4e59022d7",
-              "parentUUID": "171d94bf-5f55-47d6-8b83-5f0fbc829477",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "ea864962-a168-46f7-b67d-dbc4e59022d7"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 9048,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
     {
       "uuid": "39052786-1df7-41ec-b3bb-da4a87757957",
       "title": "",
