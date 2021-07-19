@@ -1,10 +1,6 @@
 # Tests Deel
 
 
-# You can learn more aboute cypress in:
-HomePage: https://docs.cypress.io/guides/overview/why-cypress
-
-
 --------------------------------------------------------------
 
 # Run tests
@@ -16,3 +12,8 @@ mpm run test
 
 >Path to find a mocha report
 reports/mochareports-html/report.html
+-------------------------------------------------------------
+
+
+# You can learn more about cypress in:
+HomePage: https://docs.cypress.io/guides/overview/why-cypress
