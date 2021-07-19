@@ -1,15 +1,11 @@
 
-Rodando os testes:
+Run tests:
 
+Run tests With native graphical mode cypress
+npx cypress run
 
-npx cypress open
-
-
-npm run test
-> roda os testes sem interface gráfica
-> gera 1 report json para cada teste em reposts/mocha
-> gera report consolidade html em reports/mochareports-html
-> gera imagens em morchareport/assets
+Run test With Mocha report
+mpm run test
 
 
 
