@@ -1,4 +1,5 @@
 const { describe } = require("mocha");
+import '../support/commands'
 
 describe("New Contract", () => {
     beforeEach(() => cy.visit("https://dev.deel.wtf/login"));
@@ -8,27 +9,29 @@ describe("New Contract", () => {
         const login = "silvafar@gmail.com"        
         const password = "Simone@Helo01" 
 
+        //login
         cy.xpath('//input[@name="email"]').type(login);
         cy.xpath('//input[@name="password"]').type(password);
         cy.xpath('//button[@type="submit"]').click();
-        cy.xpath('//button[@data-qa="close"]').click()
+        cy.xpath('//button[@data-qa="close"]').should('be.visible').click()
         cy.xpath('//h1[@data-qa="heading"]').should('be.visible');
 
         //Create new contract
         cy.xpath('//p[contains(.,"Create a Contract")]').click();
         cy.xpath('//h4[contains(.,"Fixed Rate")]').click();
       
-        //data
-       const name = "Contract test001"
-       const title = "Quality Assurance Engineer"
-       const rate = "1000"
-       const currancy = "GBP - British Pound"
-       const per = "Week"
-       const country = "United State"
-       const state = "Colorado"
-       const clause = "This is an automated test written in Cypress by tester Simone"
+        //data       
+            const  name = "Contract Test001";
+            const title = "Quality Assurance Engineer";
+            const rate = "1000";
+            const currency = "GBP - British Pound";
+            const per = "Week";
+            const country = "United State";
+            const state = "Colorado";
+            const clause = "This is an automated test written in Cypress by tester Simone"
+               
            
-        //Contract name
+        //Fill out Fixed Contract Page
         cy.xpath('//input[@name="name"]').type(name);
         cy.xpath('//input[@name="jobTitle"]').type(title);
         cy.xpath('//p[@class="suggestions-option"]').click();
@@ -40,9 +43,9 @@ describe("New Contract", () => {
         cy.xpath('//abbr[contains(.,"16")]').click();
         cy.xpath('//button[@class="button mb-7 w-100"][contains(.,"next")]').click();
       
-        //Another page
+        //Fill out Define the rate Page
         cy.xpath('//input[@name="rate"]').type(rate);
-        cy.xpath('//div[@class="select__single-value css-1uccc91-singleValue"][contains(.,"USD - US Dollar")]').type(currancy);
+        cy.xpath('//div[@class="select__single-value css-1uccc91-singleValue"][contains(.,"USD - US Dollar")]').type(currency);
         cy.xpath('//div[@id="react-select-3-option-37"]').click()     
         
         cy.xpath('//div[@class="select__value-container select__value-container--has-value css-1hwfws3"][contains(.,"Month")]').type(per);
@@ -67,9 +70,8 @@ describe("New Contract", () => {
 
         cy.xpath('(//div[contains(.,"create contract")])[7]').click();
 
-        cy.xpath('//div[@class="font-12 mb-4"]', {timeout: 10000})
-        .should('be.visible');
-       
+        cy.xpath('//div[@class="font-12 mb-4"]', {timeout: 50000})
+        .should('be.visible');       
       
     })  
 });
