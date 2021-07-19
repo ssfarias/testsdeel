@@ -1,5 +1,5 @@
-// Import commands.js using ES2015 syntax:
 import "./commands"
+import "./pageobjects/pageObject"
+import "./pageobjects/pageObjectNoScope"
 import 'cypress-axe'
-// Alternatively you can use CommonJS syntax:
  require('cypress-xpath');
