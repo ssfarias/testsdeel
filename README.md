@@ -8,15 +8,14 @@ Test scenarios created for Deel's selection process in the role of QA. [DEEL] ht
 
 ```
 project cypress
-Fixtures: Folder with the BDD (.robot files)
 └───integration: Folder with tests (.spec.js files)
 └───plugins: Folder with plugins configuration files
-└───reports: Code with mapped pages (.py files)
+└───reports: Foled with the reports
      └───mocha: Post with the reports generated in json
-     └───mochareports-hhml: Folder with html reports, generated from jason
-└───screenshots: Folder intended to store evidence of images
-└───support: Folder for auxiliary classes and pageobjects
-    └───pageobjects Folder with pageobjects (files js)
+     └───mochareports-hhml: Folder with html reports
+└───screenshots: Folder to store evidence imagens
+└───support: Folder for auxiliary class and pageobjects
+    └───pageobjects: Folder with pageobjects (files js)
 └───videos: Folders designed to store video evidence
 
 ```
@@ -34,9 +33,9 @@ Fixtures: Folder with the BDD (.robot files)
 
 ## Run tests
 
-- Run tests in native cypress graphics mode: `npx cypress run`
+- Run tests in native cypress graphic mode: `npx cypress run`
 
-- Run tests in mode without graphical mode, generating html report Mocha: `npm run test`
+- Run tests in mode without graphic mode, generating html report Mocha: `npm run test`
 
 - You can find the **Mocha** report in path:
 
