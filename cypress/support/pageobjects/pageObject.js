@@ -1,4 +1,4 @@
-Cypress.Commands.add('creatingFixedContract', (name, title) => {
+Cypress.Commands.add('creatingFixedContract', (name, title, yesterday) => {
     cy.xpath('//input[@name="name"]').type(name);
     cy.xpath('//input[@name="jobTitle"]').type(title);
     cy.xpath('//p[@class="suggestions-option"]').click();
@@ -7,7 +7,7 @@ Cypress.Commands.add('creatingFixedContract', (name, title) => {
     cy.xpath('//h6[contains(.,"Saved/predefined scopes")]').click();
     cy.xpath('//div[@class="scope-box"][contains(.,"Quality Assurance Engineer")]').click();
     cy.xpath('//div[@name="effectiveDate"]').click();
-    cy.xpath('//abbr[contains(.,"19")]').click();
+    cy.xpath('//abbr[contains(.,"'+yesterday+'")]').click();  
     cy.xpath('//button[@class="button mb-7 w-100"][contains(.,"next")]').click();
 });
 
